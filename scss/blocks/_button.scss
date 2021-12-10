@@ -1,0 +1,28 @@
+// Shu yerda button styles!
+
+.button {
+    margin: 0;
+    padding: 14px 39px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 186px;
+    border: none;
+    background-color: $button-backcolor;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    border: 3px solid transparent;
+    color: $button-color;
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.button:active {
+    background-color: $button_activ-backcolor;
+    color: $button_activ-color;
+    border: 3px solid $button_activ-color;
+}

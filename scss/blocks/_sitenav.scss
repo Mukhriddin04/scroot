@@ -1,0 +1,47 @@
+// Sitenav styles!
+
+.sitenav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 940px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-right: auto;
+        padding: 0;
+        width: 100%;
+        max-width: 249px;
+        list-style: none;
+    }
+
+    &__item + &__item {
+        margin-left: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        color: $sitenav__link-color;
+        transition: color 0.5s ease-in-out;
+    }
+
+    &__link:hover {
+        color: #000;
+    }
+
+    &__link:active {
+        color: #FCB72B;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .sitenav {
+        display: none;
+    }
+}

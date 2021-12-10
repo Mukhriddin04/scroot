@@ -1,0 +1,19 @@
+// Shu yerda logo syles keladi!
+
+.logo {
+    text-align: none;
+    flex-shrink: 0;
+    margin-right: 58px;
+
+    &__img {
+        display: inline-block;
+        width: 108px;
+        height: 29px;
+    }
+}
+
+@media only screen and(max-width:640px) {
+    .logo {
+        margin: 0 auto
+    }
+}

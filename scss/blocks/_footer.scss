@@ -1,0 +1,314 @@
+// Footer styles shu yerda!
+
+.footer-top {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url("../images/footer-top.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: $footer-top__backcolor;
+
+    &__hero {
+        position: relative;
+        padding: 112px 0;
+        width: 100%;
+        max-width: 1110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 415px;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: $footer-top__heading-color;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__item {
+        padding: 11px 16px;
+        background-color: $footer-top__item-backcolor;
+        border-radius: 4px;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item + &__item {
+        margin-left: 18px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 28px;
+        margin-right: 11px;
+    }
+
+    &__app {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: $footer-top__item-color;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: $footer-top__item-color;
+    }
+}
+
+.footer-bottom {
+    background-color: $footer-bottom__backcolor;
+
+    &__hero {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1110px;
+        padding: 34px 0;
+    }
+
+    &__link {
+        list-style: none;
+        margin-right: 58px;
+        flex-shrink: 0;
+    }
+
+    &__logo {
+        width: 108px;
+        height: 29px;
+    }
+
+    &__list1 {
+        margin: 0;
+        margin-right: auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item1 + &__item1 {
+        margin-left: 32px;
+    }
+
+    &__item1-link {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        color: $footer-bottom__item-color;
+        transition: color 0.5s ease-in-out;
+    }
+
+    &__item1-link:hover {
+        color: $sitenav__link_hover-color;
+    }
+
+    &__item1-link:active {
+        color: $sitenav__link_activ-color;
+    }
+
+    &__list2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item2 + &__item2 {
+        margin-left: 24px;
+    }
+
+    &__item2-link {
+        color: $sitenav__link_activ-color;
+        transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    &__item2-link:hover {
+        opacity: 0.5;
+    }
+
+    &__item2-link:active {
+        color: $header--open-sitenav__link-color;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .footer-top {
+        &__hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding: 65px 0;
+            width: 100%;
+            max-width: 460px;
+        }
+
+        &__heading {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+        }
+
+        &__item {
+            padding: 6px 8px;
+        }
+
+        &__item + &__item {
+            margin-left: 12px;
+        }
+
+        &__icon {
+            width: 16px;
+            height: 20px;
+            margin-right: 11px;
+        }
+
+        &__desc {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+        }
+
+        &__title {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 20px;
+            letter-spacing: -0.892857px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-top {
+
+        &__heading {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+
+    .footer-bottom {
+
+        &__hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 5600px;
+            padding: 50px 0 70px;
+        }
+
+        &__link {
+            margin: 0 0 40px;
+        }
+
+        &__list1 {
+            margin: 0 0 80px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .footer-top {
+
+        &__heading {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        &__item {
+            padding: 4px 6px;
+        }
+
+        &__item + &__item {
+            margin-left: 6px;
+        }
+
+        &__title {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    .footer-bottom {
+
+        &__hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 560px;
+            padding: 50px 0 70px;
+        }
+
+        &__link {
+            margin: 0 0 40px;
+        }
+
+        &__list1 {
+            margin: 0 0 80px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item1 + &__item1 {
+            margin-left: 0;
+            margin-top: 16px;
+        }
+    }
+}
